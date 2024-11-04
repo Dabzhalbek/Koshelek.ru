@@ -33,6 +33,10 @@ public class RegistrationPageTest {
         driver.quit();
     }
 
+    @Test
+    public void openpageTest(){
+
+    }
 
 
 }
