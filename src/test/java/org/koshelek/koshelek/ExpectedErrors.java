@@ -5,4 +5,6 @@ public class ExpectedErrors {
     public static String alarmMail = "Формат e-mail: username@test.ru";
     public static String alarmPassword = "Пароль должен содержать от 8 до 64 символов, включая заглавные буквы и цифры";
     public static String alarmRefCode = "Неверный формат ссылки";
+    public static String emptyField = "Поле не заполнено";
+    public static String refCodeSubscription = "Реферальный код дает скидку";
 }
