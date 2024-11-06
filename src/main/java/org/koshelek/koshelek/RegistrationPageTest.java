@@ -154,33 +154,24 @@ public class RegistrationPageTest {
     }
     @Test
     public void testUsernameFieldWithEmptyData() {
-        // Оставить поле имени пользователя пустым и нажать кнопку отправки
         registrationPage.usernameField().sendKeys("");
         registrationPage.submitButton().click();
-
-        // Проверить, что сообщение об ошибке отображается и соответствует ожиданиям
         assertTrue(registrationPage.usernameAlarmField().isDisplayed());
         assertEquals(ExpectedErrors.emptyField, registrationPage.usernameAlarmField().getText());
     }
 
     @Test
     public void testPasswordFieldWithEmptyData() {
-        // Оставить поле пароля пустым и нажать кнопку отправки
         registrationPage.passwordField().sendKeys("");
         registrationPage.submitButton().click();
-
-        // Проверить, что сообщение об ошибке отображается и соответствует ожиданиям
         assertTrue(registrationPage.passwordAlarmField().isDisplayed());
         assertEquals(ExpectedErrors.emptyField, registrationPage.passwordAlarmField().getText());
     }
 
     @Test
     public void testEmailFieldWithEmptyData() {
-        // Оставить поле email пустым и нажать кнопку отправки
         registrationPage.emailField().sendKeys("");
         registrationPage.submitButton().click();
-
-        // Проверить, что сообщение об ошибке отображается и соответствует ожиданиям
         assertTrue(registrationPage.emailAlarmField().isDisplayed());
         assertEquals(ExpectedErrors.emptyField, registrationPage.emailAlarmField().getText());
     }
